@@ -1,0 +1,21 @@
+class Solution {
+public:
+    vector<string> buildArray(vector<int>& target, int n) {
+        
+        vector<string> ans;
+        int size=target.size();
+        int i=0,j=1;
+        //i is for checking index
+        // j is for list elements
+        while(i<size)
+        {
+            ans.push_back("Push");
+             if(target[i]==j)
+                 i++;
+             else
+                ans.push_back("Pop");
+             j++;
+        }
+        return ans;
+    }
+};
